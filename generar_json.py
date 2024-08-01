@@ -4,7 +4,7 @@ import json
 
 df = pd.read_excel('original.xls')
 
-df.insert(0, 'Index', range(1, len(df) + 1))
+# df.insert(0, 'Index', range(1, len(df) + 1))
 
 json_data = df.to_json(orient='records')
 
